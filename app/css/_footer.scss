@@ -1,0 +1,81 @@
+ .footer{
+     background-color: $veryDarkBlackBlue;
+     border-top-right-radius: 3.5rem;
+     color: $white;
+     margin-top: 3rem;
+     
+
+    &__segments{
+        position: relative;
+
+        @include breakPoint-up(large){
+            display: flex;
+        }
+    }
+    &__connect,
+    &__company,
+    &__products{
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+ 
+   
+
+    &__products ul,
+    &__company ul, 
+    &__connect ul {
+        padding: .5rem;
+        padding-top: 2rem;
+        list-style-type: none;
+        width: 10rem;
+        height: 10rem;
+        border-radius: .35rem;
+        text-align: center;
+    
+    }
+
+    &__products ul>li,
+    &__company ul>li,
+    &__connect ul>li{
+        width: 100%;
+        line-height: 1.5;
+        color: $white;
+        
+    }
+
+    &__products li>a,
+    &__company li>a,
+    &__connect li>a{
+        text-decoration: none;
+        color: $white;
+
+        &:hover{
+            color: #ffe7;
+        }
+    }
+
+    &__img{
+        width: 30%;
+        position: relative;
+        
+        @include breakPoint-down(medium){
+            left: 30%;
+        }
+    }
+
+    &__top--text{
+        left: 35%;
+        position: relative;
+        font-size: 1.225rem;
+        font-weight: 400;
+
+        >a{
+            padding-bottom: 2rem;
+        }
+        &:hover{
+            color: #ffe7;
+        }
+    }
+ }

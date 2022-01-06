@@ -1,0 +1,51 @@
+.future--feature{
+    
+    
+    &__head{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    &__body{
+        position: relative;
+
+        @include breakPoint-up(large){
+            display: flex;
+        }
+        
+
+        &__text{
+            width: 100%;
+            line-height: 1.75;
+            position: relative;
+
+            @include breakPoint-down(medium){
+               text-align: center;
+           } 
+
+           @include breakPoint-up(large){
+            width: 45%;
+            order: 1;
+        } 
+
+        }
+        &__img{
+            position: relative;
+            width: 40%;
+            
+            >img{
+                position: relative;
+            }
+
+            @include breakPoint-down(small){
+                width: 100%;
+                left: -15%;
+            }
+
+            @include breakPoint-up(large){
+                width: 40%;
+                order: 2;
+            } 
+        }
+    }
+}

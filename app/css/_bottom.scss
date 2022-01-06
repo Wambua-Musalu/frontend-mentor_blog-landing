@@ -1,0 +1,33 @@
+.bottom{
+
+    margin-top: 3rem;
+    
+    @include breakPoint-up(large){
+        display: flex;
+    }
+
+    &__text{
+        position: relative;
+        line-height: 1.5;
+        text-align: center;
+       
+
+        @include breakPoint-up(large){
+            width: 40%;
+            left: 10%;
+        }
+
+    }
+
+    &__img{
+        position: relative;
+
+        >div >img{
+            position: relative;
+            width: 150%;
+            height: 100%;
+            left: -25%;
+
+        }
+    }
+}
